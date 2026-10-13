@@ -1,0 +1,5 @@
+target/
+custom-report/
+.settings/
+.project/
+.classpath/

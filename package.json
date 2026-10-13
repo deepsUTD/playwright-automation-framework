@@ -1,0 +1,28 @@
+{
+  "name": "playwright-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:cypress": "cypress run",
+    "serve:ssn": "python -m http.server 8000",
+    "setup:ssn": "python -m pip install -r ssn_validation/requirements.txt",
+    "test:ssn": "python -m pytest -c ssn_validation/pytest.ini",
+    "test:api": "playwright test tests/api",
+    "setup:tfl-bdd": "python -m pip install -r tfl_bikepoint_bdd/requirements.txt",
+    "test:tfl-bdd": "python -m pytest -c tfl_bikepoint_bdd/pytest.ini tfl_bikepoint_bdd/test_bikepoint.py",
+    "test:herokuapp:mocha": "mocha --timeout 60000 mocha-tests/herokuapp.test.js",
+    "test:herokuapp:junit": "mvn -f herokuapp-selenium-test/pom.xml test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1",
+    "chai": "^6.3.0",
+    "cypress": "^16.1.0",
+    "mocha": "^12.0.3",
+    "selenium-webdriver": "^4.50.0"
+  }
+}

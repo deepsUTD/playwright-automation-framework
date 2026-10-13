@@ -1,0 +1,15 @@
+{
+  "name": "herokuapp-selenium-api-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API tests using axios and selenium-webdriver against jsonplaceholder.typicode.com",
+  "scripts": {
+    "test:api": "mocha src/tests/apiTests.js --timeout 60000"
+  },
+  "devDependencies": {
+    "axios": "^1.7.9",
+    "chai": "^4.5.0",
+    "mocha": "^10.8.2",
+    "selenium-webdriver": "^4.27.0"
+  }
+}
